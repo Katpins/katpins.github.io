@@ -1,0 +1,13 @@
+<div class="container__popup--portfolio" id="modal">
+    {% for post in site.posts %}
+    <div class="scroll__popup--portfolio" id="content-{{post.idjs}}">
+        <div class="content__popup--portfolio">
+            <h1 class="section__title--popup ">{{ post.title }}</h1>
+            <div class="img__main--popup " style="background-image: url(img/test.png) "></div>
+            <div class="body__popup--portfolio">{{ post.content }}</div>
+            <button class="button button--popup" type="button" id="close-{{post.idjs}}"></button>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
