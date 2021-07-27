@@ -20,6 +20,11 @@ const modal__content4 = document.getElementById("content-4")
 const close4 = document.getElementById("close-4");
 const open4 = document.getElementById("open-4");
 
+// popup 4
+const modal__content5 = document.getElementById("content-5")
+const close5 = document.getElementById("close-5");
+const open5 = document.getElementById("open-5");
+
 
 toggle.addEventListener("click", () => {
     if (navList.classList.contains("show")) {
@@ -34,8 +39,12 @@ open1.addEventListener("click", () => openPopup(modal__content1));
 close1.addEventListener("click", () => closePopup(modal__content1));
 open2.addEventListener("click", () => openPopup(modal__content2));
 close2.addEventListener("click", () => closePopup(modal__content2));
-// open3.addEventListener("click", () => openPopup(modal__content2));
-// close3.addEventListener("click", () => closePopup(modal__content2));
+open3.addEventListener("click", () => openPopup(modal__content3));
+close3.addEventListener("click", () => closePopup(modal__content3));
+open4.addEventListener("click", () => openPopup(modal__content4));
+close4.addEventListener("click", () => closePopup(modal__content4));
+open5.addEventListener("click", () => openPopup(modal__content5));
+close5.addEventListener("click", () => closePopup(modal__content5));
 
 
 

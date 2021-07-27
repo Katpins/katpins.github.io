@@ -1,11 +1,22 @@
 <div class="container__popup--portfolio" id="modal">
-    {% for post in site.posts %}
-    <div class="scroll__popup--portfolio" id="content-{{post.idjs}}">
+    {% for project in site.projects %}
+    <div class="scroll__popup--portfolio" id="content-{{project.idjs}}">
         <div class="content__popup--portfolio">
-            <h1 class="section__title--popup ">{{ post.title }}</h1>
-            <div class="img__main--popup " style="background-image: url(img/test.png) "></div>
-            <div class="body__popup--portfolio">{{ post.content }}</div>
-            <button class="button button--popup" type="button" id="close-{{post.idjs}}"></button>
+            <h1 class="section__title--popup ">{{ project.name }}</h1>
+            <div class="img__main--popup " style="background-image: url({{project.img}}) "></div>
+            {% if project.website %}
+            <p class="info__item--popup"><strong>Website: </strong><a href="{{project.website}}"><strong>{{project.website}}</strong></a></p>
+            {%endif%}
+            <div class="info__grid--popup">
+                <p class="info__item--popup" style="width: 100%; "><strong>Engine: </strong>Unity</p>
+                <p class="info__item--popup" style="width: 100%; "><strong>Genre: </strong>{{project.genre}}</p>
+                <p class="info__item--popup" style="width: 100%; "><strong>My role: </strong>{{project.role}}</p>
+                <p class="info__item--popup" style="width: 100%; "><strong>Development: </strong> {{project.time}}</p>
+            </div>
+            <!-- <p class="info__item--popup" style="text-align: center;"><strong>Team: </strong>{{project.team}}</p> -->
+            <div class="body__popup--portfolio">{{ project.content }}</div>
+
+            <button class="button button--popup" type="button" id="close-{{project.idjs}}"></button>
         </div>
     </div>
 

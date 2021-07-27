@@ -13,22 +13,33 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Katpins Portfolio
+email: kateryna.pinchuks@gmail.com
+linkedin: https://www.linkedin.com/in/kateryna-pinchuk-595432193/
+github: https://github.com/Katpins
+itchio: https://katpinss.itch.io/
+
+about: Hi! My name is Katja and I am a junior game developer open for feedback and improvement. Passionate about the medium of video games and with interest in technical and visual side of the art. I am ready to take on new challenges and grow above myself.
+
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Junior developer open for feedback and improvement.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: jekyllrb
+# github_username:  jekyll
 
 # Build settings
 markdown: kramdown
 #theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  skills:
+    output: true
+  projects:
+    output: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
