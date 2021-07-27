@@ -1,5 +1,5 @@
 ---
-category: Visual Design
+category: Visual design
 subskills:
  - Clip Studio Paint
  - Photoshop

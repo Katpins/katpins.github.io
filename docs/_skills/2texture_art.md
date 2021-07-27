@@ -1,5 +1,5 @@
 ---
-category: Material creation
+category: Textures and rendering
 subskills:
  - Substance Designer
  - Substance Painter

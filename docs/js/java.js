@@ -20,10 +20,15 @@ const modal__content4 = document.getElementById("content-4")
 const close4 = document.getElementById("close-4");
 const open4 = document.getElementById("open-4");
 
-// popup 4
+// popup 5
 const modal__content5 = document.getElementById("content-5")
 const close5 = document.getElementById("close-5");
 const open5 = document.getElementById("open-5");
+
+//popup 6
+const modal__content6 = document.getElementById("content-6")
+const close6 = document.getElementById("close-6");
+const open6 = document.getElementById("open-6");
 
 
 toggle.addEventListener("click", () => {
@@ -45,6 +50,9 @@ open4.addEventListener("click", () => openPopup(modal__content4));
 close4.addEventListener("click", () => closePopup(modal__content4));
 open5.addEventListener("click", () => openPopup(modal__content5));
 close5.addEventListener("click", () => closePopup(modal__content5));
+open6.addEventListener("click", () => openPopup(modal__content6));
+close6.addEventListener("click", () => closePopup(modal__content6));
+
 
 
 
